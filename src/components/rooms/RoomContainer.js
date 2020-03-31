@@ -39,8 +39,6 @@ function init(rooms, state) {
   state.totalMinSize = state.minSize;
   state.maxSize = Math.max(...rooms.map((room) => room.size));
   state.totalMaxSize = state.maxSize;
-
-  console.log(state);
 }
 
 function filterRooms(searchState, rooms, setSortedRooms) {

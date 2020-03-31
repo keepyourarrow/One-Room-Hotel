@@ -47,8 +47,6 @@ export const RoomCard = ({ room, col }) => {
     //Room is ordered only if the user is logged in.
     if (loggedInUser.length > 0) {
       // if user didn't order the room
-      console.log(loggedInUser[0].room.length !== undefined);
-      console.log(loggedInUser[0].room.length !== 0);
       if (loggedInUser[0].room.length == 0) {
         let temp = [...loggedInUser]; // made a copy of user
         let tempRoom = { ...temp[0] }; // made a copy of an item
@@ -76,7 +74,6 @@ export const RoomCard = ({ room, col }) => {
   };
 
   const handleDelete = () => {
-    console.log(rooms);
     let tempRoom = rooms.filter((key) => room !== key);
     setRooms(tempRoom);
   };

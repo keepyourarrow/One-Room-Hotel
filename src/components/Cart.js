@@ -4,7 +4,6 @@ import { RoomContext } from "../context";
 
 export const Cart = () => {
   let { loggedInUser, setLoggedInUser, cartOpen } = useContext(RoomContext);
-  console.log(loggedInUser);
   if (
     loggedInUser === null ||
     loggedInUser === undefined ||
@@ -15,20 +14,16 @@ export const Cart = () => {
 
   let { room } = loggedInUser[0];
 
-  console.log(room);
-
   const handleClearRoom = () => {
     let temp = [...loggedInUser];
     let tempRoom = { ...temp[0] };
     tempRoom.room = [];
     temp[0] = tempRoom;
-    console.log(temp[0].room.length === undefined);
     setLoggedInUser(temp);
   };
 
   return (
     <>
-      {console.log(loggedInUser)}
       {loggedInUser && (
         <>
           <div className={cartOpen ? "cart-open cart" : "cart"}>

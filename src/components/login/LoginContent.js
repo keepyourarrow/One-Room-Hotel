@@ -7,7 +7,6 @@ function processLogin(data, users, setLoggedInUser) {
   let tempUser = users.filter(
     (user) => user.name === data.name && user.password === data.password
   );
-  console.log(tempUser);
 
   if (tempUser.length === 0) {
     return false;
@@ -24,7 +23,6 @@ function registerUser(data, users, setUsers) {
     admin: false,
     room: []
   };
-  console.log(tempUser);
 
   setUsers([...users, tempUser]);
 }
@@ -63,7 +61,6 @@ export const LoginContent = ({ modalState, modalDispatch }) => {
     } else {
       authStatus = processLogin(data, users, setLoggedInUser);
     }
-    console.log(authStatus);
 
     if (authStatus === "Good") {
       history.push("/");
@@ -75,7 +72,6 @@ export const LoginContent = ({ modalState, modalDispatch }) => {
       setError("name", "notMatch", "Password or username is incorrect");
       return;
     }
-    console.log(loggedInUser);
   };
   return (
     <div className="login-content">

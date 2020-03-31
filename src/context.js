@@ -69,8 +69,6 @@ const RoomProvider = ({ children }) => {
     setLoggedInUser([]);
   };
 
-  console.log(rooms);
-
   // find room by slug
   const getRoom = (slug) => {
     const room = rooms.find((room) => room.slug === slug);

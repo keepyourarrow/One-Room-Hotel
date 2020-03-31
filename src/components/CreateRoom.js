@@ -149,7 +149,6 @@ export const CreateRoom = () => {
 
   return (
     <section id="create-room" className="create-room mt-5">
-      {console.log(errors)}
       <Title title="Create new room" />
       {formSubmitted && (
         <div className="create-room-success">
