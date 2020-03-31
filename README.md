@@ -5,18 +5,25 @@ not to mention that it's a good experience to work with a big project.
 
 There is no data so no rooms would be displayed.
 To start a project - press the Populate Data button on the top.
+
 Rooms should appear now.
+
 The purpose of the site for a user is to find a room that he likes and order it.
 You can do a basic things that a non-logined user can do. Like viewing rooms.
 But you can only order one if you are registered.
 
-You can signup or login as 2 preexisting users.
+You can signup or login as 2 preexisting users:
+
 As a normal user:
+
 username: normaluser
+
 password: normaluser
 
 Or as an admin:
+
 username: admin
+
 password: admin
 
 Admin has more tools that he can use like creating/deleting rooms.
