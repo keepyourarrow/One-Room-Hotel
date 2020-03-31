@@ -23,7 +23,7 @@ export const DisplaySingleRoom = ({ room }) => {
         }
         return image;
       });
-      setCurrentImage(e.target.src.substring(21));
+      setCurrentImage(room.images[e.target.alt]);
     }
   };
 
@@ -80,7 +80,7 @@ export const DisplaySingleRoom = ({ room }) => {
       <div className="col-lg-4 col-sm-6 col-10 my-4" key={index}>
         <img
           src={key}
-          alt={key.name}
+          alt={index}
           className="img-fluid"
           onClick={handleCarousel}
         />
