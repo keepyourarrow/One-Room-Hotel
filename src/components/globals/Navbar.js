@@ -3,6 +3,7 @@ import logo from "../../img/logo.png";
 import { Link } from "react-router-dom";
 import { LoginModal } from "../login/LoginModal";
 import { RoomContext } from "../../context";
+import { PleaseLoginAlert } from "./PleaseLoginAlert";
 
 let initialState = {
   openModal: false,
@@ -64,6 +65,7 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg ">
+      <PleaseLoginAlert />
       <Link to="/" className="navbar-brand">
         <img src={logo} alt="logo" />
       </Link>
