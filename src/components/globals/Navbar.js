@@ -5,7 +5,7 @@ import { LoginModal } from "../login/LoginModal";
 import { RoomContext } from "../../context";
 
 let initialState = {
-  openModal: false
+  openModal: false,
 };
 
 function reducer(state, action) {
@@ -13,13 +13,13 @@ function reducer(state, action) {
     case "open":
       document.body.style.overflow = "hidden";
       state = {
-        openModal: true
+        openModal: true,
       };
       return state;
     case "close":
       document.body.style.overflow = "auto";
       state = {
-        openModal: false
+        openModal: false,
       };
       return state;
 
@@ -45,7 +45,7 @@ export const Navbar = () => {
     loggedInUser && loggedInUser.length > 0 ? "Logout" : "Login/Signin";
 
   useEffect(() => {
-    window.addEventListener("resize", function() {
+    window.addEventListener("resize", function () {
       if (window.innerWidth < 560) {
         setMobileScreen(true);
       } else {

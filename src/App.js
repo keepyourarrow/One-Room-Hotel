@@ -11,10 +11,12 @@ import { ErrorPage } from "./pages/ErrorPage";
 import { SingleRoomPage } from "./pages/SingleRoomPage";
 import { LoginPage } from "./pages/LoginPage";
 import { Navbar } from "./components/globals/Navbar";
+import { PleaseLoginAlert } from "./components/globals/PleaseLoginAlert";
 
 function App() {
   return (
     <>
+      <PleaseLoginAlert />
       <Navbar />
       <Switch>
         <Route exact path="/" component={HomePage} />

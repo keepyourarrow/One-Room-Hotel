@@ -897,6 +897,37 @@ form .login-label {
 
 /* end of cart */
 
+/* please login-alert */
+.please-login-alert-on {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+  padding: 4px;
+}
+.please-login-alert-off {
+  display: none;
+  height: 0;
+}
+.please-login-alert-close {
+  position: absolute;
+  text-align: right;
+  top: -3px;
+  right: 7px;
+  color: rgb(212, 201, 201);
+  display: block;
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.3s ease;
+}
+.please-login-alert-close:hover {
+  color: white;
+}
+
+/* end of please login alert */
 @media screen and (max-width: 991px) {
   html {
     font-size: 16px;
