@@ -14,7 +14,7 @@ But you can only order one if you are registered.
 
 You can signup or login as 2 preexisting users:
 
-As a normal user:
+As a user:
 
 username: normaluser
 
